@@ -1,5 +1,6 @@
-const dotenv = require("dotenv");
-dotenv.config({ path: "./.env.deploy"});
+const dotenv = require('dotenv');
+
+dotenv.config({ path: './.env.deploy' });
 
 const {
   DEPLOY_USER,
@@ -10,12 +11,13 @@ const {
 } = process.env;
 
 module.exports = {
-  apps : [{
-    name   : "mesto",
-    script : "dist/app.js"
+  apps: [{
+    name: 'mesto',
+    script: 'dist/app.js',
   }],
   deploy: {
     production: {
+      key: '~/.ssh/yc-organization-id-bpf2of5oetrfe6tmajem-dmlyrae',
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
