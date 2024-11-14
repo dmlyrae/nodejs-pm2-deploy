@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('api.dmlyrae.nomorepartiesco.ru');
+  const api = new Api('http://api.dmlyrae.nomorepartiesco.ru');
   
   export default api;
   
